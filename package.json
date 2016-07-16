@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/redddddit/issues"
   },
-  "homepage": "https://github.com/AgtLucas/redddddit#readme"
+  "homepage": "https://github.com/AgtLucas/redddddit#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "humps": "^1.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.13.1",
+    "normalizr": "^2.2.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0"
+  }
 }
