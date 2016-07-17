@@ -17,7 +17,7 @@ const posts = (state = {
   isFetching: false,
   didInvalidate: false,
   items: []
-}, action) {
+}, action) => {
   switch (action.type) {
     case INVALIDATE_SUBREDDIT:
       return Object.assign({}, state, {
