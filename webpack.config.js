@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -14,11 +13,6 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
