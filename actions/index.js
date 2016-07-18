@@ -30,7 +30,7 @@ const receivePosts = (subreddit, json) => ({
 const fetchPosts = (subreddit) => {
   return dispatch => {
     dispatch(requestPosts(subreddit))
-    return fetch(`http://www.reddit.com/r/${subreddit}.json`)
+    return fetch(`https://www.reddit.com/r/${subreddit}.json`)
       .then(response => response.json())
       .then(json => dispatch(receivePosts(subreddit, json)))
   }
