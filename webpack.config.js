@@ -25,5 +25,8 @@ module.exports = {
         include: __dirname
       }
     ]
+  },
+  node: {
+    process: false
   }
 }
